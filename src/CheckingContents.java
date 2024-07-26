@@ -20,6 +20,6 @@ public class CheckingContents {
         } else {
             System.out.println("Недопустимый символ" +s+ " != " +f.length());
         }
-        return s == 20;
+        return s == f.length();
     }
 }

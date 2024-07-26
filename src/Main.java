@@ -1,14 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-        CheckLengthOfReceivedCharacters checkLengthOfReceivedCharacters = new CheckLengthOfReceivedCharacters();
-        CheckingContents checkingContents = new CheckingContents();
-
-        if (checkLengthOfReceivedCharacters.checkLengthOfReceived("asdfg67890_hnmiqwe32")) {
-            checkingContents.checkContent("asdfg67890_hnmiqwe32");
-        } else {
-            System.out.println(0);
+        RegisterAnAccount registerAnAccount = new RegisterAnAccount();
+        try {
+            registerAnAccount.checkCorrectnessOfInput("lflldf7788", "fjhjhgFFDD25343_", "fjhjhgFFDD25343_");
+        } catch (WrongLoginException e) {
+            System.out.println("В поле login имеется превышение или недопустимые символы");
+        } catch (WrongPasswordException e) {
+            System.out.println("В поле password имеется превышение или недопустимые символы, confirmPassword не совпадает с password");
+        } finally {
+            System.out.println("Проверка регистрационных данных завершена");
         }
-
     }
 }
