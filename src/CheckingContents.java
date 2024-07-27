@@ -7,18 +7,11 @@ public class CheckingContents {
             for (int i = 0; i < validCharacters.length(); i++) {
                 if (validCharacters.charAt(i) == f.charAt(z)) {
                     s++;
-                    System.out.println(i + "true " + z);
                     break;
                 } else {
                     b++;
-                    System.out.println(z + " " + i);
                 }
             }
-        }
-        if (s == f.length()) {
-            System.out.println("Пароль вверен" +s+ " = " +f.length());
-        } else {
-            System.out.println("Недопустимый символ" +s+ " != " +f.length());
         }
         return s == f.length();
     }

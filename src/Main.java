@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         RegisterAnAccount registerAnAccount = new RegisterAnAccount();
         try {
-            registerAnAccount.checkCorrectnessOfInput("lflldf7788", "fjhjhgFFDD25343_", "fjhjhgFFDD25343_");
+            registerAnAccount.checkCorrectnessOfInput("55555555555555df7788", "fjhjhgFF25343_", "fjhjhgFF25343_");
         } catch (WrongLoginException e) {
             System.out.println("В поле login имеется превышение или недопустимые символы");
         } catch (WrongPasswordException e) {
